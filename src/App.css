@@ -1,0 +1,75 @@
+.container{
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+  grid-template-areas: 'nav nav nav nav' 'slider main main main' 'slider content1 content2 content3' 'slider footer footer footer';
+  gap: 2px;
+}
+.nav{
+  background-color: aqua;
+  grid-area: nav;
+}
+.slider{
+  background-color: rgb(13, 77, 77);
+  grid-area: slider;
+}
+.main{
+  background-color: rgb(11, 190, 131);
+  grid-area: main;
+}
+.content1{
+  background-color: aqua;
+  grid-area: content1;
+}
+.content2{
+  background-color: rgb(157, 29, 173);
+  grid-area: content2;
+}
+.content3{
+  background-color: rgb(231, 14, 14);
+  grid-area:content3;
+}
+.footer{
+  background-color: rgb(224, 130, 22);
+  grid-area: footer;
+}
+
+@media only screen and (max-width: 600px) {
+  .container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0.2fr 1.5fr 1.2fr 0.8fr;
+    grid-template-areas: 'nav' 'slider' 'main' 'content1' 'content2' 'content3' 'footer';
+    gap: 2px;
+  }
+  .nav{
+    background-color: aqua;
+    grid-area: nav;
+  }
+  .slider{
+    background-color: rgb(13, 77, 77);
+    grid-area: slider;
+  }
+  .main{
+    background-color: rgb(11, 190, 131);
+    grid-area: main;
+  }
+  .content1{
+    background-color: aqua;
+    grid-area: content1;
+  }
+  .content2{
+    background-color: rgb(157, 29, 173);
+    grid-area: content2;
+  }
+  .content3{
+    background-color: rgb(231, 14, 14);
+    grid-area:content3;
+  }
+  .footer{
+    background-color: rgb(224, 130, 22);
+    grid-area: footer;
+  }
+}
